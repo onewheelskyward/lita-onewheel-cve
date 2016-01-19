@@ -7,7 +7,6 @@ describe Lita::Handlers::OnewheelCve, lita_handler: true do
 
   it 'will return a cve link to the thing' do
     send_message 'oh man cve-2015-1234 is so awesome'
-    puts replies.last
     expect(replies.last).to eq('http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2015-1234')
   end
 end
