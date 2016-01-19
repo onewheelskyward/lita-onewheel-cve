@@ -18,7 +18,7 @@ Add lita-onewheel-cve to your Lita instance's Gemfile:
 
 Usage
 ----
-When someone mentions 'CVE-1234-1234' it'll post a link to mitre.org.
+When someone mentions 'CVE-1234-1234' it'll post a link to http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=1234-1234.
 
 That's all, folks!
 
