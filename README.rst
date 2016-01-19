@@ -1,9 +1,12 @@
 lita-onewheel-cve
 ----
-.. image:: https://travis-ci.org/onewheelskyward/lita-onewheel-cve.svg?branch=master
-:target: https://travis-ci.org/onewheelskyward/lita-onewheel-cve
-.. image:: https://coveralls.io/repos/github/onewheelskyward/lita-onewheel-cve/badge.svg?branch=master
-:target: https://coveralls.io/github/onewheelskyward/lita-onewheel-cve?branch=master
+|buildstatus|
+|coveragestatus|
+
+.. |buildstatus| image:: https://travis-ci.org/onewheelskyward/lita-onewheel-cve.svg?branch=master 
+  :target: https://travis-ci.org/onewheelskyward/lita-onewheel-cve
+.. |coveragestatus| image:: https://coveralls.io/repos/github/onewheelskyward/lita-onewheel-cve/badge.svg?branch=master
+  :target: https://coveralls.io/github/onewheelskyward/lita-onewheel-cve?branch=master
 
 Puts out links to CVEs when they're posted in chat.
 
