@@ -1,6 +1,8 @@
 module Lita
   module Handlers
     class OnewheelCve < Handler
+      config :search_url, default: 'http://www.cve.mitre.org/cgi-bin/cvename.cgi?name='
+
       route(
         /(\s|^)cve-(?<id>\d{4}-\d{4})/i,
         :handle_cve,
@@ -11,7 +13,7 @@ module Lita
 
       def handle_cve(response)
         id = response.match_data['id']
-        url = 'http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=' + id
+        url = config.search_url + id
         response.reply url
       end
 
