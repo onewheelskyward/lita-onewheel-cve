@@ -2,11 +2,23 @@ lita-onewheel-cve
 ----
 |buildstatus|
 |coveragestatus|
+|license|
+|rubygems|
+|codeclimate|
+|gemnasium|
 
 .. |buildstatus| image:: https://travis-ci.org/onewheelskyward/lita-onewheel-cve.svg?branch=master
   :target: https://travis-ci.org/onewheelskyward/lita-onewheel-cve
 .. |coveragestatus| image:: https://coveralls.io/repos/github/onewheelskyward/lita-onewheel-cve/badge.svg?branch=master
   :target: https://coveralls.io/github/onewheelskyward/lita-onewheel-cve?branch=master
+.. |license| image:: https://img.shields.io/badge/license-MIT-brightgreen.svg
+  :target: https://tldrlegal.com/license/mit-license
+.. |rubygems| image:: http://img.shields.io/gem/v/lita-onewheel-cve.svg
+  :target: https://rubygems.org/gems/lita-onewheel-cve
+.. |codeclimate| image:: https://img.shields.io/codeclimate/github/onewheelskyward/lita-onewheel-cve.svg
+  :target: https://codeclimate.com/github/onewheelskyward/lita-onewheel-cve
+.. |gemnasium| image:: https://img.shields.io/gemnasium/onewheelskyward/lita-onewheel-cve.svg
+  :target: https://gemnasium.com/onewheelskyward/lita-onewheel-cve
 
 Puts out links to CVEs when they're posted in chat.
 
