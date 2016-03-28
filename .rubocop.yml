@@ -1,0 +1,10 @@
+Documentation:
+  Exclude:
+    - lib/lita/handlers/onewheel_cve.rb
+
+FileName:
+  Exclude:
+    - lib/lita-onewheel-cve.rb
+
+LineLength:
+  Max: 100
