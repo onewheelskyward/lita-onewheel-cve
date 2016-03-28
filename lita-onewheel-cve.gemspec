@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-cve'
-  spec.version       = '0.0.0'
+  spec.version       = '0.1.0'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
   spec.description   = 'CVE decoder to pull the root link from a CVE posted in chat.'
