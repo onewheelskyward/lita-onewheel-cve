@@ -4,7 +4,7 @@ module Lita
       config :search_url, default: 'http://www.cve.mitre.org/cgi-bin/cvename.cgi?name='
 
       route(
-        /(\s|^)cve-(?<id>\d{4}-\d{4})/i,
+        /(\s|^)cve-(?<id>\d{4}-\d+)/i,
         :handle_cve,
         help: {
           'text including cve-1234-1234' => 'Will return a link to cve.mitre.org.'
