@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'lita', '~> 4'
 
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'coveralls', '~> 0.8'
   # spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rake', '~> 10.4'

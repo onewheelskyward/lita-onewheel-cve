@@ -1,0 +1,44 @@
+version: 2.1
+
+merge_master: &merge_master
+  name: Fetch PR merge commit
+  command: |
+    # Merges master into our PR and fails if we have a conflict on that
+    if [[ -n "${CIRCLE_PULL_REQUEST}" ]]; then
+      git fetch origin master
+      git config --global user.email "circleci@pagerduty.com"
+      git config --global user.name "circleci"
+
+      git rebase origin/master
+      if [[ $? -ne 0 ]]; then
+        echo "Merge conflict detected; aborting. Please manually fix the conflict and retry."
+        exit 1
+      fi
+    fi
+
+jobs:
+  test:
+    docker:
+      - image: circleci/ruby:2.7.3
+        environment:
+          LANG: en_US.UTF-8
+          LANGUAGE: en_US:en
+          LC_ALL: en_US.UTF-8
+      - image: circleci/redis:latest
+    steps:
+      - checkout
+      - run:
+          <<: *merge_master
+      - run:
+          name: 'install dependencies'
+          command: bundle install
+      - run:
+          name: 'run tests'
+          command: bundle exec rspec
+
+workflows:
+  version: 2
+  test_and_publish:
+    jobs:
+      - test:
+          context: PagerDuty
